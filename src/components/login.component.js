@@ -1,6 +1,18 @@
 import React, { Component } from "react";
+import Auth from "./auth";
 
 export default class Login extends Component {
+    constructor(props){
+        super(props);
+        this.login=this.login.bind(this);
+        this.logout=this.logout.bind(this);
+        }
+        login(){
+        Auth.authenticate();
+        }
+        logout(){
+        Auth.signout();
+        }
     render() {
         return (
             <form>
@@ -22,11 +34,7 @@ export default class Login extends Component {
                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                     </div>
                 </div>
-
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
+                <button type="submit" className="btn btn-primary btn-block" onClick={this.login}  to="/Dashboard"><a href="/Dashboard">submit</a></button>
             </form>
         );
     }
