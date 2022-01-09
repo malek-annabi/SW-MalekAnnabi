@@ -1,0 +1,74 @@
+.back {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .nb{
+    background: transparent;
+    border:none;
+    width: 80%;
+  }
+  .div-center {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    display: table;
+  }
+  
+  div.content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .nodec{
+    text-decoration: none;
+    color: white;
+  }
+  .login{
+    top: 50%;
+    position: absolute;
+    right: 50%;
+  }
+  .specialB{
+    border-radius: 50px;
+  }
+  .logo{
+    left: 40%;
+    top: 20px;
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle 
+  }
+  .swbcP{
+    background: rgb(37,39,73);
+background: linear-gradient(90deg, rgba(37,39,73,1) 0%, rgba(103,38,177,1) 50%, rgba(101,0,201,1) 100%);
+  }
+  .swbcB{
+    background: rgb(67,70,116);
+background: linear-gradient(90deg, rgba(67,70,116,1) 0%, rgba(153,143,164,1) 50%, rgba(116,90,141,1) 100%);
+color: white;
+  }
+  .swbcG{
+    background: rgb(152,196,89);
+    background: linear-gradient(90deg, rgba(152,196,89,1) 0%, rgba(63,218,23,1) 6%, rgba(180,223,30,0.8382703423166141) 100%);
+  }
+  .icons{
+    position: relative;
+    color: white;
+    margin-left: 10px;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+ }
